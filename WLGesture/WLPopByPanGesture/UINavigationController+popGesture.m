@@ -60,6 +60,7 @@ static char popGestureAbleAssociatedObjectKey;
 - (void)wl_pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     //手势的targets中存在了该手势时不重复添加
+    self.popGestureAbled = NO;
     UIGestureRecognizer *gesture = self.interactivePopGestureRecognizer;
     if (![gesture.view.gestureRecognizers containsObject:self.popGestureRecongizer]) {
         

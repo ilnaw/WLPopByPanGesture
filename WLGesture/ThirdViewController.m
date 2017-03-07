@@ -24,9 +24,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.popGestureAbled = NO;
+//    self.navigationController.popGestureAbled = NO;
     
     //禁用系统自带
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+//    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 @end
